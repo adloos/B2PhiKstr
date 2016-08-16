@@ -1,0 +1,468 @@
+% to compile this type pdflatex {file}
+\documentclass[11pt]{article}
+\usepackage[margin=1.in]{geometry}
+%\usepackage{xfrac}
+%\usepackage{listings}
+\pdfoptionpdfminorversion=6
+\usepackage{graphicx}
+\graphicspath{ {figures/} }
+\def\etal{{\it et al.}}
+\begin{document}
+%\pagenumbering{gobble}
+
+\title{{\large \bf Branching Fractions and Amplitude Analysis of $B^\pm\to\phi K^{*\pm}$ decays}}
+\author{A.~D.~Loos, V.~Bhardwaj, M.~V.~Purohit, \\
+  and the rest of the Belle collaboration}
+\date{\today}% It is always \today, today, but you may specify any date
+             % with \date. 
+\maketitle
+\thispagestyle{empty}
+
+\begin{abstract}
+  In this note we report on an analysis of $B^\pm\to\phi K^{*\pm}$
+  decays extracted from Belle data. We find that the branching fraction
+  to these decays from the full data set is ... and an amplitude analysis of these decays reveals ...
+\end{abstract}
+
+\newpage
+\tableofcontents
+%\listoftables
+%\listoffigures
+%\clearpage
+\pagenumbering{arabic}
+\pagestyle{headings}
+\newpage
+
+\section{Introduction and Theory}
+
+\begin{figure}[!th]
+  \centering
+  \includegraphics[width=0.5\textwidth]{PhiKstar_Feynman_Diagram.pdf}
+\end{figure}
+
+Decays of $B^\pm$ mesons to the final state $\phi K^0_S \pi^\pm$ proceed
+via the penguin diagram shown in Fig.%~\ref{fig:penguin}.
+This $b\to s$
+transition diagram involves a loop with two weak vertices and is
+considerably suppressed compared to copious $B$ decay modes. On the
+other hand, contributions from New Physics (NP) are possible and may be
+significant in comparison to the SM contribution.%~\cite{ref:BSM}
+
+A second interest in analysis of this decay mode is the fraction of
+longitudinal polarization, a variable traditionally called $f_L$.
+
+
+%An outline (to be expanded):
+%\begin{itemize}
+%\item Why the physics is interesting
+%\item Past results from BaBar, Belle, ...
+%\item A brief outline of the analysis
+ % \end{itemize} 
+
+\subsection{Physics of $B^\pm\to\phi K^{*\pm}$ decays}
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{PhiKstar_Decay_Angles.pdf}
+\end{figure} 
+
+\begin{itemize}
+\item Angular Distribution
+\item Mass distribution
+\item Mass-angular distribution
+\end{itemize}
+                
+
+\subsection{Overview of Analysis}
+In this analysis, we measured the following final states of $B^{\pm}
+\rightarrow \phi (\rightarrow K^{0}_{s} \pi^{\pm})^{* \pm} $:
+
+\begin{itemize}
+\item $B^{\pm} \rightarrow \phi K^{* \pm}(892) \rightarrow K^{0}_{s} \pi^{\pm}$ 
+\item $B^{\pm} \rightarrow \phi K^{* \pm}_{0}(1430) \rightarrow K^{0}_{s} \pi^{\pm}$ 
+\item $B^{\pm} \rightarrow \phi K^{* \pm}_{2}(1430) \rightarrow K^{0}_{s} \pi^{\pm}$ 
+\end{itemize}
+
+
+\section{$B^{0} \rightarrow \phi K^{* 0}$ Resulsts and Expectations}
+
+\section{Event Selection}
+
+For on-resonance data and generic MC, processing took places in two
+steps: skimming and reconstruction.
+
+\subsection{Data Sets}
+
+This analysis uses data case b skimmed data. We used:
+\begin{itemize}
+\item The complete case b, on-resonance data
+\item Five complete streams of generic, case b, on-resonance MC
+\item A generated signal MC for $B^{\pm} \rightarrow \phi K^{* \pm}(892)$,
+  $B^{\pm} \rightarrow \phi K^{* \pm}_{0}(1430)$, 
+    and $ B^{\pm} \rightarrow \phi K^{* \pm}_{2}(1430)$    
+\item Rare data sets
+\end{itemize}
+
+\noindent
+Due to processing errors, the following runs were obmitted from data,
+\begin{itemize}
+\item Runs 566, 567, 898, and 899 for experiment 17
+\item Runs 444, 544, 546, 592, 625, 626 and 797 for experiment 19
+\item Runs 875 and 878 for experiment 39
+\item Run 308 for experiment 55 \\
+\end{itemize}
+\noindent
+Scripts were used to extract the number of incoming and outgoing events
+in our two-stage skim and reconstruction. These numbers were then
+compared with Belle's event documentation. Tables with event
+numbers can be found in the "Tables and Figures" subsection.  
+
+\subsection{Skimming}
+
+For data and generic MC, the final states were not explicitly
+reconstructed as the $K^{* +}$ reasonances. Instead, the reasonances were
+studied when and fitting the K $\pi$ invariant mass plot. \\ 
+\newline
+
+\noindent
+The skimming part of the event processing selected two charged K,
+and then a charged $\pi$ and a $K^{0}_{s}$ for the reconstruction of
+$\phi$ and a charged $K^{*}$, respectively. \\
+\newline
+
+\noindent
+Two oppositely charged K were selected and combined to give a $\phi$
+candidate with 0.950 GeV $ < m_{\phi} <$ 1.69 GeV. \\
+
+\noindent
+Loose intial selection criteria for the charged $\pi$ were
+$|m_{\pi^{\pm}} - m^{PDG}_{\pi^{\pm}}| < 0.6$ GeV. \\
+
+\noindent
+Selection for the $K^{0}_{s}$ candidates were made using the Mdst vee2
+table. The candidates were required to have an invariant mass
+$|m_{K^{0}_{s}} - m^{PDG}_{K^{0}_{s}}| < 0.035$ GeV. \\
+
+\noindent
+The charged pion and $K^{0}_{s}$ were combined with the $\phi$ to give a
+charged B. The difference in the nominal B energy was required to be
+$|\Delta E| <$ 0.3 GeV. The beam constrained mass was selected to have
+$m_{bc} > 5.2 GeV$. These selection requirements conclude the skimming
+part of the analysis. \\
+
+\noindent
+The number of data events coming in, "Skim In," and out, "Skim Out,"
+of this process can be found in Table 1 for each experiment. Similar
+tables can be found in the ``Figures and Tables'' section for each of
+the three types of background: uds, mixed, charm and charged. 
+\subsection{Reconstruction}
+
+The reconstruction part of this process focuses on reconstructing the B
+vertex and radiative final state energy.\\
+
+\noindent
+The number of events going into the reconstruction, "Reco In,"  can be
+found in table 1.
+
+\noindent
+To find the number of events that were lost between the skimming and
+reconstruction processes, table 1 includes a final check column. This takes the
+difference between the skim output and the reco input. Out of the
+24515324 events that should be there, 14396 events were lost due to
+processing complications. This is approximately $0.0056\%$ of the total
+events coming out of the skim.
+
+\subsection{Artificial Neural Network 1}
+This ANN had event shaped cuts.\\
+
+Variables used in this neural network include: $R_2$, qr, cosb, cosbt,
+costhr, k0et, k0hoo0, k0hoo1, k0hoo2, k0hoo3, k0hoo4, k0hso00, k0hso01,
+k0hso02, k0hso03, k0hso04, k0hso10, k0hso12, k0hso14, k0hso20, k0hso22, k0hso24
+
+
+\subsection{Artificial Neural Network 2}
+Best candidate selection using $B \chi^{2}_{vtx}, \Delta
+E, m_{\phi}, \Delta z, \chi^{2}(K^0_s), and z_dist(K^0_s)$
+\subsection{Final Cuts}
+
+\section{MC Background}
+Background from $D^{0} \rightarrow \phi K^{0}_s$ was removed.
+\section{Fits}
+\section{Results}
+\section{Systematics}
+\subsection{Radiation Corrections}
+\newpage
+\section{Tables and Figures}
+\subsection{Table 1: Data}
+\begin{tabular}{ | l || l | l | l || l | l | l | l |}
+  \hline
+  Exp&Skim In&Skim Out&Skim Ratio& Reco In&Missing Events&Reco Out&Reco Ratio\\ \hline
+  \hline
+  7&24891675&138428&0.00556&138424&4&11163&0.0806\\\hline
+  9&18489854&108560&0.00587&108556&4&8495&0.0783\\\hline
+  11&34113689&207206&0.00607&207204&2&16182&0.0781\\\hline
+  13&44914733&278538&0.00620&278536&2&21921&0.0787\\\hline
+  15&53244815&309047&0.00580&309047&0&25133&0.0813\\\hline
+  17&46237211&272321&0.00589&271102&1219&22614&0.0834\\\hline
+  19&103962996&601674&0.00579&598254&3420&49725&0.0831\\\hline
+  21&18489106&105243&0.00569&105243&0&8790&0.0835\\\hline
+  23&26802068&155377&0.00580&155377&0&12889&0.0830\\\hline
+  25&110272393&634789&0.00576&634789&0&52735&0.0831\\\hline
+  27&109198061&631511&0.00578&631511&0&52092&0.0825\\\hline
+  \hline
+  31&78502039&670183&0.00854&670183&0&52208&0.0779\\\hline
+  33&77541248&648548&0.00836&648548&0&51091&0.0788\\\hline
+  35&73875887&636256&0.00861&636256&0&48813&0.0767\\\hline
+  37&265946423&2280233&0.00857&2280233&0&177442&0.0778\\\hline
+  39&180004692&1511630&0.00840&1505484&6146&117495&0.0780\\\hline
+  41&256419928&2148467&0.00838&2148467&0&168646&0.0785\\\hline
+  43&245273504&2089861&0.00852&2089861&0&164173&0.0786\\\hline
+  45&57315483&478698&0.00835&478698&0&38217&0.0798\\\hline
+  47&165163809&1403375&0.00850&1403375&0&112630&0.0803\\\hline
+  49&119534708&1008981&0.00844&1008981&0&79339&0.0786\\\hline
+  51&172799727&1469662&0.00851&1469662&0&116492&0.0793\\\hline
+  55&321315022&2733804&0.00851&2730205&3599&214876&0.0787\\\hline
+  61&154618685&1330798&0.00861&1330798&0&102842&0.0773\\\hline
+  63&146092280&1251098&0.00856&1251098&0&100657&0.0805\\\hline
+  65&167611001&1411036&0.00842&1411036&0&113886&0.0807\\\hline
+  \hline
+  SVD 1&590616601&3442694&0.00583&3438043&4651&281739&0.0819\\\hline
+  SVD 2&2482014436&21072630&0.00849&21062885&9745&1658807&0.0788\\ \hline
+  Total&3072631037&24515324&0.00798&24500928&14396&1940546&0.0792\\ \hline
+\end{tabular}
+
+
+\begin{figure}[!tbh]
+  \centering
+  \begin{minipage}[b]{0.4\textwidth}
+    \includegraphics[width=\textwidth]{DataSkimRatio.png}
+    \caption{Data Skim Ratio.}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+    \includegraphics[width=\textwidth]{DataRecoRatio.png}
+    \caption{Data Reco Ratio.}
+    \end{minipage}
+\end{figure}
+
+
+\subsection{Table 2: Full Stream 1 Uds}
+\begin{tabular}{ | l || l | l | l | l || l | l | l |}
+  \hline
+  Exp&Belle Doc. &Skim In&Skim Out&Skim Ratio&Reco In&Reco Out&Reco Ratio \\
+  \hline \hline
+  7&12115359&12115359&103500&0.00854&103500&97517&0.9422\\\hline
+  9&8603092&8603092&75008&0.00872&75008&70888&0.9451\\\hline
+  11&16086112&16086112&141504&0.00880&141504&133691&0.9448\\\hline
+  13&22372593&22372593&196643&0.00879&196643&185793&0.9448\\\hline
+  15&26514597&26514597&227454&0.00858&227454&214902&0.9448\\\hline
+  17&19287346&19287346&166383&0.00863&166383&157175&0.9447\\\hline
+  19&51465220&51465220&438085&0.00851&438085&413821&0.9446\\\hline
+  21&9018475&9018475&76686&0.00850&76686&72490&0.9453\\\hline
+  23&13222444&13222444&113778&0.00860&113778&107355&0.9435\\\hline
+  25&53265401&53265401&459972&0.00864&459972&434200&0.9440\\\hline
+  27&52992758&52992758&455991&0.00860&455991&430340&0.9437\\\hline
+  \hline
+  31&35582936&35582936&396736&0.01115&396736&377490&0.9515\\\hline
+  33&36330562&36330562&406016&0.01118&406016&387029&0.9532\\\hline
+  35&35258660&35258660&400993&0.01137&400993&382459&0.9538\\\hline
+  37&127249999&127249999&1449588&0.01139&1449588&1381041&0.9527\\\hline
+  39&88523407&88523407&1004744&0.01135&1004744&957758&0.9532\\\hline
+  41&119814238&119814238&1362046&0.01137&1362046&1297580&0.9527\\\hline
+  43&114139596&114139596&1300642&0.01140&1300642&1235842&0.9502\\\hline
+  45&26739289&26739289&303490&0.01135&303490&288765&0.9515\\\hline
+  47&76758509&76758509&877442&0.01143&877442&834679&0.9513\\\hline
+  49&55742786&55742786&635537&0.01140&635537&604286&0.9508\\\hline
+  51&81031726&81031726&924391&0.01141&924391&880100&0.9521\\\hline
+  55&148951973&148951973&1696894&0.01139&1696894&1617214&0.9530\\\hline
+  61&71425095&71425095&825675&0.01156&825675&785937&0.9519\\\hline
+  63&67221743&67221743&771832&0.01148&771832&734469&0.9516\\\hline
+  65&77692728&77692728&893175&0.01150&893175&849449&0.9510\\\hline
+  \hline
+  SVD 1&284943397&284943397&2455004&0.00862&2455004&2318172&0.9443\\\hline
+  SVD 2&1162463247&1162463247&13249201&0.01140&13249201&12614098&0.9521\\\hline
+  Total&1447406644&1447406644&15704205&0.01085&15704205&14932270&0.9508\\\hline
+\end{tabular}
+
+
+\begin{figure}[!thb]
+  \centering
+  \begin{minipage}[b]{0.4\textwidth}
+    \includegraphics[width=\textwidth]{UdsSkimRatio1.png}
+    \caption{Uds Skim Ratio.}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+    \includegraphics[width=\textwidth]{UdsRecoRatio1.png}
+    \caption{Uds Reco Ratio.}
+  \end{minipage}
+\end{figure}
+
+\subsection{Table 3: Full Stream 1 Charm}
+\begin{tabular}{ | l || l | l | l | l || l | l | l |}
+  \hline
+  Exp&Belle Doc. &Skim In &Skim Out&Skim Ratio&Reco In&Reco Out&Reco Ratio\\
+  \hline \hline
+  7&7536265&7536265&69991&0.00929&69991&66954&0.9566\\ \hline
+  9&5351450&5351450&50781&0.00949&50781&48766&0.9603\\\hline
+  11&10005969&10005969&96091&0.00960&96091&92204&0.9595\\\hline
+  13&13916304&13916304&135256&0.00972&135256&129599&0.9582\\\hline
+  15&16492593&16492593&153957&0.00933&153957&147669&0.9592\\\hline
+  17&11997076&11997076&113650&0.00947&113650&108867&0.9579\\\hline
+  19&32012211&32012211&298208&0.00932&298208&285720&0.9581\\\hline
+  21&5609655&5609655&51807&0.00924&51807&49617&0.9577\\\hline
+  23&8224605&8224605&78116&0.00950&78116&74870&0.9584\\\hline
+  25&33132058&33132058&312372&0.00943&312372&299075&0.9574\\\hline
+  27&32962343&32962343&310544&0.00942&310544&297183&0.9570\\\hline
+  \hline
+  31&22133172&22133172&269824&0.01219&269824&259986&0.9635\\\hline
+  33&22598090&22598090&277489&0.01228&277489&267733&0.9648\\\hline
+  35&21931344&21931344&271527&0.01238&271527&261997&0.9649\\\hline
+  37&79151036&79151036&983076&0.01242&983076&948160&0.9645\\\hline
+  39&55062602&55062602&683405&0.01241&683405&659449&0.9649\\\hline
+  41&74525788&74525788&923956&0.01240&923956&890921&0.9642\\\hline
+  43&70996068&70996068&880157&0.01240&880157&846868&0.9622\\\hline
+  45&16632145&16632145&206579&0.01242&206579&199033&0.9635\\\hline
+  47&47744637&47744637&596241&0.01249&596241&574230&0.9631\\\hline
+  49&34672643&34672643&431570&0.01245&431570&415472&0.9627\\\hline
+  51&50402720&50402720&627347&0.01245&627347&604965&0.9643\\\hline
+  55&92649805&92649805&1152179&0.01244&1152179&1111411&0.9646\\\hline
+  61&44427294&44427294&558447&0.01257&558447&537826&0.9631\\\hline
+  63&41812691&41812691&525090&0.01256&525090&505950&0.9635\\\hline
+  65&48325746&48325746&604586&0.01251&604586&582088&0.9628\\\hline
+  \hline
+  SVD 1&177240529&177240529&1670773&0.00943&1670773&1600524&0.9580\\\hline
+  SVD 2&723065781&723065781&8991473&0.01244&8991473&8666089&0.9638\\\hline
+  Total&900306310&900306310&10662246&0.01184&10662246&10266613&0.9629\\\hline
+\end{tabular}
+
+\begin{figure}[!htb]
+  \centering
+  \begin{minipage}[b]{0.4\textwidth}
+    \includegraphics[width=\textwidth]{CharmSkimRatio1.png}
+    \caption{Charm Skim Ratio.}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+    \includegraphics[width=\textwidth]{CharmRecoRatio1.png}
+    \caption{Charm Reco Ratio.}
+  \end{minipage}
+\end{figure}
+
+
+\subsection{Table 4: Full Stream 1 Mixed}
+\begin{tabular}{ | l || l | l | l | l || l | l | l |}
+  \hline
+  Exp&Belle Doc.&Skim In&Skim Out&Ratio&Reco In&Reco Out&Reco Ratio\\
+  \hline \hline
+  7&3158539&3158539&5358&0.00170&5358&5341&0.9968\\\hline
+  9&2243081&2243081&3870&0.00173&3870&3852&0.9953\\\hline
+  11&4194377&4194377&7195&0.00172&7195&7165&0.9958\\\hline
+  13&5833568&5833568&10427&0.00179&10427&10378&0.9953\\\hline
+  15&6913774&6913774&11840&0.00171&11840&11773&0.9943\\\hline
+  17&5029273&5029273&8597&0.00171&8597&8556&0.9952\\\hline
+  19&13419895&13419895&22773&0.00170&22773&22663&0.9952\\\hline
+  21&2351610&2351610&3990&0.00170&3990&3978&0.9970\\\hline
+  23&3447814&3447814&6059&0.00176&6059&6030&0.9952\\\hline
+  25&13889176&13889176&23915&0.00172&23915&23785&0.9946\\\hline
+  27&13818248&13818248&23852&0.00173&23852&23721&0.9945\\\hline
+  \hline
+  31&9278483&9278483&23952&0.00258&23952&23745&0.9914\\\hline
+  33&9473593&9473593&24657&0.00260&24657&24513&0.9942\\\hline
+  35&9194074&9194074&24318&0.00264&24318&24184&0.9945\\\hline
+  37&33181993&33181993&87710&0.00264&87710&87019&0.9921\\\hline
+  39&23083591&23083591&61389&0.00266&61389&60958&0.9930\\\hline
+  41&31243161&31243161&82987&0.00266&82987&82295&0.9917\\\hline
+  43&29763443&29763443&79147&0.00266&79147&78307&0.9894\\\hline
+  45&6972626&6972626&18167&0.00261&18167&18013&0.9915\\\hline
+  47&20015813&20015813&53287&0.00266&53287&52775&0.9904\\\hline
+  49&14535658&14535658&38336&0.00264&38336&37948&0.9899\\\hline
+  51&21130008&21130008&55889&0.00265&55889&55468&0.9925\\\hline
+  55&38841208&38841208&102892&0.00265&102892&102119&0.9925\\\hline
+  61&18624948&18624948&49496&0.00266&49496&49138&0.9928\\\hline
+  63&17528960&17528960&46471&0.00265&46471&46099&0.9920\\\hline
+  65&20259430&20259430&53152&0.00262&53152&52724&0.9919\\\hline
+  \hline
+  SVD 1&74299355&74299355&127876&0.00172&127876&127242&0.9950\\\hline
+  SVD 2&303126989&303126989&801850&0.00265&801850&795305&0.9918\\\hline
+  Total&377426344&377426344&929726&0.00246&929726&922547&0.9923\\\hline
+\end{tabular}
+
+
+\begin{figure}[!tbh]
+  \centering
+  \begin{minipage}[b]{0.4\textwidth}
+    \includegraphics[width=\textwidth]{MixedSkimRatio1.png}
+    \caption{Mixed Skim Ratio.}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+    \includegraphics[width=\textwidth]{MixedRecoRatio1.png}
+    \caption{Mixed Reco Ratio.}
+  \end{minipage}
+\end{figure}
+
+
+\subsection{Table 5: Full Stream 1 Charged}
+\begin{tabular}{ | l || l | l | l | l || l | l | l |}
+  \hline
+  Exp&Belle Doc.& Skim In& Skim Out&Ratio&Reco In&Reco Out&RecoRatio\\\hline
+  \hline
+  7&3158539&3158539&8771&0.00278&8771&8734&0.9958\\\hline
+  9&2243082&2243082&6317&0.00282&6317&6300&0.9973\\\hline
+  11&4194377&4194377&12028&0.00287&12028&11982&0.9962\\\hline
+  13&5833568&5833568&16576&0.00284&16576&16514&0.9963\\\hline
+  15&6913772&6913772&19412&0.00281&19412&19315&0.9950\\\hline
+  17&5029273&5029273&14249&0.00283&14249&14193&0.9961\\\hline
+  19&13419896&13419896&37147&0.00277&37147&36935&0.9943\\\hline
+  21&2351610&2351610&6674&0.00284&6674&6637&0.9945\\\hline
+  23&3447814&3447814&9724&0.00282&9724&9676&0.9951\\\hline
+  25&13889176&13889176&39138&0.00282&39138&38935&0.9948\\\hline
+  27&13818245&13818245&39107&0.00283&39107&38871&0.9940\\\hline
+  \hline
+  31&9278486&9278486&36854&0.00397&36854&36598&0.9931\\\hline
+  33&9473597&9473597&37697&0.00398&37697&37468&0.9939\\\hline
+  35&9194075&9194075&37656&0.00410&37656&37380&0.9927\\\hline
+  37&33181995&33181995&134822&0.00406&134822&133763&0.9921\\\hline
+  39&23083585&23083585&93494&0.00405&93494&92855&0.9932\\\hline
+  41&31243163&31243163&127517&0.00408&127517&126527&0.9922\\\hline
+  43&29763451&29763451&121374&0.00408&121374&120105&0.9895\\\hline
+  45&6972626&6972626&28199&0.00404&28199&27972&0.9920\\\hline
+  47&20015809&20015809&81528&0.00407&81528&80708&0.9899\\\hline
+  49&14535659&14535659&59095&0.00407&59095&58476&0.9895\\\hline
+  51&21130003&21130003&86241&0.00408&86241&85587&0.9924\\\hline
+  55&38841213&38841213&156826&0.00404&156826&155640&0.9924\\\hline
+  61&18624949&18624949&76058&0.00408&76058&75539&0.9932\\\hline
+  63&17528959&17528959&71405&0.00407&71405&70916&0.9932\\\hline
+  65&20259429&20259429&82084&0.00405&82084&81485&0.9927\\\hline
+  \hline
+  SVD 1&74299352&74299352&209143&0.00281&209143&208092&0.9950\\\hline
+  SVD 2&303126999&303126999&1230850&0.00406&1230850&1221019&0.9920\\\hline
+  Total&377426351&377426351&1439993&0.00382&1439993&1429111&0.9924\\\hline
+\end{tabular}
+
+
+\begin{figure}[!tbh]
+  \centering
+  \begin{minipage}[b]{0.4\textwidth}
+    \includegraphics[width=\textwidth]{ChargedSkimRatio1.png}
+      \caption{Charged Skim Ratio.}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+    \includegraphics[width=\textwidth]{ChargedRecoRatio1.png}
+    \caption{Charged Reco Ratio.}
+  \end{minipage}
+\end{figure}
+
+\begin{thebibliography}{99}
+\bibitem{Belle_13} M.~Prim \etal, ``Angular analysis of $B^0 \to \phi
+  K^*$ decays and search for CP violation at Belle'', Phys. Rev. D 88, 072004 (2013).
+  
+\bibitem{BaBar_07} B. Aubert \etal, ``Vector-Tensor and Vector-Vector
+  Decay Amplitude Analysis of $B^0\to\phi K^{*0}$'', PRL 98, 051801 (2007).
+  
+\bibitem{BaBar_08} B. Aubert \etal, ``Observation and Polarization
+  Measurements of $B^\pm\to\phi K_1^\pm$ and $B^\pm\to\phi K_2^{*\pm}$ ", PRL 101, 161801 (2008).
+\end{thebibliography} 
+
+\end{document}
